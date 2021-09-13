@@ -11,19 +11,25 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("col");
-    div.innerHTML = `<div class="single-product card h-100">
-      <div>
+    div.innerHTML = `<div class="card h-100  bg-color">
+    
+    <div class="d-flex justify-content-center py-3">
     <img class="product-image" src=${image}></img>
-      </div>
-      <div class="card-body">
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <h3>Rating:${product.rating.rate}</h3>
-      </div>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
-      `;
+    </div>
+
+    <div class="card-body pt-2">
+    <p>${product.title}</p>
+    <h6>Category: ${product.category}</h6>
+    <h5>Rating:${product.rating.rate}</h5>
+    <h3>Price: $ ${product.price}</h3>
+    </div>
+
+    <div class="mx-auto my-4">
+    <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+    <button id="details-btn" class="btn btn-danger">Details</button>
+    </div>
+    </div>
+    `;
     document.getElementById("all-products").appendChild(div);
   }
 };
