@@ -1,7 +1,10 @@
 body{
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-};
+}
+.color{
+  color: #05ca8f ;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -39,24 +42,18 @@ body{
   align-items: center;
   justify-content: center;
 /* } */ 
-.bg-color{
-  background-color: #d5fff3;
+#bg-color{
+  background-color: #dafff4;
 }
 
 .single-product {
-  padding: 10px;
+  
   transition: 0.6s;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid cyan;
-}
-.img-div{
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .product-image {
   width: 150px;

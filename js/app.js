@@ -11,20 +11,20 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("col");
-    div.innerHTML = `<div class="card h-100  bg-color">
-    
+    div.innerHTML = `<div class="card h-100 single-product" id="bg-color">
+
     <div class="d-flex justify-content-center py-3">
     <img class="product-image" src=${image}></img>
     </div>
-
+    
     <div class="card-body pt-2">
-    <p>${product.title}</p>
-    <h6>Category: ${product.category}</h6>
-    <h5>Rating:${product.rating.rate}</h5>
+    <h5>${product.title}</h5>
+    <p>Category: ${product.category}</p>
     <h3>Price: $ ${product.price}</h3>
+    <h5>Rating: ${product.rating.rate}</h5>
+    <h5>Reviewed by ${product.rating.count} people</h5>
     </div>
-
-    <div class="mx-auto my-4">
+    <div class="mx-auto mb-5">
     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
     <button id="details-btn" class="btn btn-danger">Details</button>
     </div>
@@ -33,6 +33,7 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
