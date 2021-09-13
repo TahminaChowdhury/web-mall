@@ -13,15 +13,12 @@ const showProducts = (products) => {
     div.classList.add("col");
     div.innerHTML = `<div class="card h-100 single-product" id="bg-color">
 
-    <div class="d-flex justify-content-center py-3">
+    <div class="card-body text-center py-3">
     <img class="product-image" src=${image}></img>
-    </div>
-    
-    <div class="card-body pt-2">
-    <h5>${product.title}</h5>
+    <h5 class="pt-4">${product.title}</h5>
     <p>Category: ${product.category}</p>
     <h3>Price: $ ${product.price}</h3>
-    <h5>Rating: ${product.rating.rate}</h5>
+    <h5>Rating: ${product.rating.rate} <span class="text-warning"><i class="fas fa-star"></i></span></h5>
     <h5>Reviewed by ${product.rating.count} people</h5>
     </div>
     <div class="mx-auto mb-5">
