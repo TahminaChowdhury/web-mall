@@ -12,16 +12,16 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("col");
     div.innerHTML = `<div class="card h-100 single-product" id="bg-color">
-
     <div class="card-body text-center py-3">
     <img class="product-image" src=${image}></img>
     <h5 class="pt-4">${product.title}</h5>
     <p>Category: ${product.category}</p>
-    <h3>Price: $ ${product.price}</h3>
     <h5>Rating: ${product.rating.rate} <span class="text-warning"><i class="fas fa-star"></i></span></h5>
     <h5>Reviewed by ${product.rating.count} people</h5>
     </div>
-    <div class="mx-auto mb-5">
+    <div class="pb-4 text-center">
+    
+    <h3  class="pb-3">Price: $ ${product.price}</h3>
     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
     <button id="details-btn" class="btn btn-danger">Details</button>
     </div>

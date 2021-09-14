@@ -3,17 +3,16 @@ body{
   font-family: "Montserrat", sans-serif;
 }
 .color{
-  color: #05ca8f ;
+  color:#09bd87 ;
 }
-.search-field {
+/* .search-field {
   border: none;
   border-radius: 50px;
   padding: 5px;
   outline: none;
-}
+} */
 .search-field:hover {
-  outline: none;
-  border: none;
+  border-color:#09bd87 ;
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
@@ -47,7 +46,6 @@ body{
 }
 
 .single-product {
-  
   transition: 0.6s;
 }
 .single-product:hover {
@@ -71,6 +69,13 @@ body{
 .cart-main {
   padding-right: 30px;
 }
+#review-count{
+  color: #09bd87;
+}
+#addToCart-btn{
+  background-color: #09bd87;
+}
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
