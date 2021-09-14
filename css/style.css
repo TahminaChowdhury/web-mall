@@ -5,12 +5,12 @@ body{
 .color{
   color:#09bd87 ;
 }
-/* .search-field {
+.search-field {
   border: none;
   border-radius: 50px;
   padding: 5px;
   outline: none;
-} */
+}
 .search-field:hover {
   border-color:#09bd87 ;
 }
@@ -70,7 +70,8 @@ body{
   padding-right: 30px;
 }
 #review-count{
-  color: #09bd87;
+  font-size: larger;
+ 
 }
 #addToCart-btn{
   background-color: #09bd87;
